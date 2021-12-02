@@ -1,0 +1,13 @@
+REDUX CRIA UM ESTADO GLOBAL QUE PODE SER USADO POR QUALQUER COMPONENTE DA APLICAÇÃO
+
+
+REDUX -> vai ter um estado inicial: {
+  usuario_logado: false -> estado inicial
+}
+
+se precisar manipular o estado, vai ser disparado uma ação ai o reducer vai ouvir a ação e criar um novo estado e mudar a variavel usuario_logado.
+
+
+ação -> reducer -> retorna um NewState = state(estado atual) e vai retornar o NewState
+
+ação (request) -> o saga -> verifica e chama o -> reducer -> sucess/fail
